@@ -1,0 +1,57 @@
+# Created by: Martin Wilke <miwi@FreeBSD.org>
+# $FreeBSD$
+
+PORTNAME=	miwinb
+PORTVERSION=	0.5
+CATEGORIES=	base misc
+
+MAINTAINER=	miwi@FreeBSD.org
+COMMENT=	Desktop Port
+
+RUN_DEPENDS+=	xorg>0:x11/xorg \
+		urxvt:x11/rxvt-unicode \
+		urxvt:x11/urxvt-perls \
+		vim:editors/vim \
+		x11-ssh-askpass:security/openssh-askpass \
+		porttools>0:ports-mgmt/porttools \
+		psearch:ports-mgmt/psearch \
+		zsh:shells/zsh \
+		git:devel/git \
+		firefox:www/firefox \
+		neomutt:mail/neomutt \
+		bz:ports-mgmt/freebsd-bugzilla-cli \
+		mc:misc/mc  \
+		svn:devel/subversion \
+		rsync:net/rsync \
+		arandr:x11/arandr \
+		python:lang/python \
+		openvpn:security/openvpn \
+		synergyc:sysutils/synergy \
+		/boot/modules/i915kms.ko:graphics/drm-current-kmod\
+		slim:x11/slim \
+		htop:sysutils/htop \
+		${LOCALBASE}/share/fonts/webfonts/arial.ttf:x11-fonts/webfonts \
+		${LOCALBASE}/share/fonts/bitstream-vera/VeraBd.ttf:x11-fonts/bitstream-vera \
+		${LOCALBASE}/share/fonts/ChromeOS/Cousine-BoldItalic.ttf:x11-fonts/croscorefonts-fonts-ttf \
+		${LOCALBASE}/share/fonts/terminus-font/ter-112b.pcf.gz:x11-fonts/terminus-font \
+		${LOCALBASE}/share/fonts/TerminusTTF/TerminusTTF-4.46.0.ttf:x11-fonts/terminus-ttf \
+		${LOCALBASE}/share/fonts/powerline-fonts/SpaceMono-Bold.ttf:x11-fonts/powerline-fonts \
+		i3:x11-wm/i3 \
+		i3lock:x11/i3lock \
+		i3status:x11/i3status \
+		dunst:sysutils/dunst \
+		rofi:x11/rofi \
+		feh:graphics/feh \
+		unzip:archivers/unzip \
+		wifimgr:net-mgmt/wifimgr \
+		powermon:sysutils/powermon \
+		powerdxx:sysutils/powerdxx \
+		xautolock:x11/xautolock
+
+
+
+USES=		metaport fonts
+NO_ARCH=	yes
+
+
+.include <bsd.port.mk>
