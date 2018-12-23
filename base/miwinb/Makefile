@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
