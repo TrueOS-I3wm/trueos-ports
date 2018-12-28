@@ -38,7 +38,6 @@ RUN_DEPENDS+=	xorg>0:x11/xorg \
 		rofi:x11/rofi \
 		feh:graphics/feh \
 		unzip:archivers/unzip \
-		wifimgr:net-mgmt/wifimgr \
 		powermon:sysutils/powermon \
 		powerdxx:sysutils/powerdxx \
 		xautolock:x11/xautolock \
