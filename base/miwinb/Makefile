@@ -11,7 +11,7 @@ COMMENT=	Desktop Port
 RUN_DEPENDS+=	xorg>0:x11/xorg \
 		urxvt:x11/rxvt-unicode \
 		urxvt:x11/urxvt-perls \
-		vim:editors/vim \
+		vim:editors/vim-console \
 		x11-ssh-askpass:security/openssh-askpass \
 		porttools>0:ports-mgmt/porttools \
 		psearch:ports-mgmt/psearch \
