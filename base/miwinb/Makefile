@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -23,7 +23,6 @@ RUN_DEPENDS+=	xorg>0:x11/xorg \
 		mc:misc/mc  \
 		svn:devel/subversion \
 		rsync:net/rsync \
-		arandr:x11/arandr \
 		python:lang/python \
 		openvpn:security/openvpn \
 		synergyc:sysutils/synergy \
@@ -44,10 +43,7 @@ RUN_DEPENDS+=	xorg>0:x11/xorg \
 		py3status:deskutils/py-py3status \
 		networkmgr:net-mgmt/networkmgr
 
-
-
 USES=		metaport fonts
 NO_ARCH=	yes
-
 
 .include <bsd.port.mk>
