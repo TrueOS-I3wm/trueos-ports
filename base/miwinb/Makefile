@@ -26,7 +26,7 @@ RUN_DEPENDS+=	xorg>0:x11/xorg \
 		python:lang/python \
 		openvpn:security/openvpn \
 		synergyc:sysutils/synergy \
-		/boot/modules/i915kms.ko:graphics/drm-current-kmod\
+		/boot/modules/i915kms.ko:graphics/drm-current-kmod \
 		slim:x11/slim \
 		htop:sysutils/htop \
 		${LOCALBASE}/share/fonts/powerline-fonts/SpaceMono-Bold.ttf:x11-fonts/powerline-fonts \
