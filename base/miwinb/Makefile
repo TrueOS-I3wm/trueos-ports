@@ -2,13 +2,13 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.9
+PORTVERSION=	0.10
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Desktop Port
 
-RUN_DEPENDS+=	xorg>0:x11/xorg \
+RUN_DEPENDS+=	xorg>0:x11/xorg-minimal \
 		urxvt:x11/rxvt-unicode \
 		urxvt:x11/urxvt-perls \
 		vim:editors/vim-console \
@@ -42,7 +42,8 @@ RUN_DEPENDS+=	xorg>0:x11/xorg \
 		xautolock:x11/xautolock \
 		py3status:deskutils/py-py3status \
 		networkmgr:net-mgmt/networkmgr \
-		lxrandr:x11/lxrandr
+		lxrandr:x11/lxrandr \
+		sysup:sysutils/sysup
 
 USES=		metaport fonts
 NO_ARCH=	yes
