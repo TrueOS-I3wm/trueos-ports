@@ -8,7 +8,7 @@ CATEGORIES=	base misc
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Desktop Port
 
-RUN_DEPENDS+=	X:x11/xorg \
+RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		urxvt:x11/rxvt-unicode \
 		urxvt:x11/urxvt-perls \
 		vim:editors/vim-console \
