@@ -46,7 +46,7 @@ RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		sysup:sysutils/sysup \
 		gcalcli:deskutils/gcalcli \
 		neofetch:sysutils/neofetch \
-		graphics/scrot
+		scrot:graphics/scrot
 
 USES=		metaport fonts
 NO_ARCH=	yes
