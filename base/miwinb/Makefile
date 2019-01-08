@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.11
+PORTVERSION=	0.12
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -43,7 +43,8 @@ RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		py3status:deskutils/py-py3status \
 		networkmgr:net-mgmt/networkmgr \
 		lxrandr:x11/lxrandr \
-		sysup:sysutils/sysup
+		sysup:sysutils/sysup \
+		gcalcli:deskutils/gcalcli
 
 USES=		metaport fonts
 NO_ARCH=	yes
