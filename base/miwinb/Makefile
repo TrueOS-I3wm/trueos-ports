@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -44,9 +44,11 @@ RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		networkmgr:net-mgmt/networkmgr \
 		lxrandr:x11/lxrandr \
 		sysup:sysutils/sysup \
-		gcalcli:deskutils/gcalcli
+		gcalcli:deskutils/gcalcli \
+		neofetch:sysutils/neofetch \
+		graphics/scrot
 
-USES=		metaport fonts
+USES=		metaport font
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
