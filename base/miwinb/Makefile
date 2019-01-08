@@ -48,7 +48,7 @@ RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		neofetch:sysutils/neofetch \
 		graphics/scrot
 
-USES=		metaport font
+USES=		metaport fonts
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
