@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -30,6 +30,7 @@ RUN_DEPENDS+=	xorg>0:x11/xorg  \
 		slim:x11/slim \
 		htop:sysutils/htop \
 		${LOCALBASE}/share/fonts/powerline-fonts/SpaceMono-Bold.ttf:x11-fonts/powerline-fonts \
+		font-awesome>0:x11-fonts/font-awesome \
 		i3:x11-wm/i3 \
 		i3lock:x11/i3lock \
 		i3status:x11/i3status \
