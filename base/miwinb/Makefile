@@ -2,13 +2,14 @@
 # $FreeBSD$
 
 PORTNAME=	miwinb
-PORTVERSION=	0.14
+PORTVERSION=	0.15
 CATEGORIES=	base misc
 
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Desktop Port
 
-RUN_DEPENDS+=	xorg>0:x11/xorg  \
+RUN_DEPENDS=	indexinfo:print/indexinfo \
+		xorg>0:x11/xorg  \
 		urxvt:x11/rxvt-unicode \
 		urxvt:x11/urxvt-perls \
 		vim:editors/vim-console \
