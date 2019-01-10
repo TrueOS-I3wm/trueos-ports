@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	miwinb
-PORTVERSION=	0.15
-CATEGORIES=	base misc
+PORTNAME=	miwidesktop
+PORTVERSION=	0.16
+CATEGORIES=	x11
 
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Desktop Port
