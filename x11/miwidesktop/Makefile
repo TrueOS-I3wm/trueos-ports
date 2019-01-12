@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwidesktop
-PORTVERSION=	0.16
+PORTVERSION=	0.17
 CATEGORIES=	x11
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -48,7 +48,8 @@ RUN_DEPENDS=	indexinfo:print/indexinfo \
 		sysup:sysutils/sysup \
 		gcalcli:deskutils/gcalcli \
 		neofetch:sysutils/neofetch \
-		scrot:graphics/scrot
+		scrot:graphics/scrot \
+		notify-send:devel/libnotify
 
 USES=		metaport fonts
 NO_ARCH=	yes
