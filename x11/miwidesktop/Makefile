@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	miwidesktop
-PORTVERSION=	0.17
+PORTVERSION=	0.18
 CATEGORIES=	x11
 
 MAINTAINER=	miwi@FreeBSD.org
@@ -10,8 +10,7 @@ COMMENT=	Desktop Port
 
 RUN_DEPENDS=	indexinfo:print/indexinfo \
 		xorg>0:x11/xorg  \
-		urxvt:x11/rxvt-unicode \
-		urxvt:x11/urxvt-perls \
+		pastebinit:misc/pastebinit \
 		vim:editors/vim-console \
 		x11-ssh-askpass:security/openssh-askpass \
 		porttools>0:ports-mgmt/porttools \
@@ -35,12 +34,12 @@ RUN_DEPENDS=	indexinfo:print/indexinfo \
 		i3:x11-wm/i3 \
 		i3lock:x11/i3lock \
 		i3status:x11/i3status \
+		st:x11/i3-sterm \
 		dunst:sysutils/dunst \
 		rofi:x11/rofi \
 		feh:graphics/feh \
 		unzip:archivers/unzip \
 		powermon:sysutils/powermon \
-		powerdxx:sysutils/powerdxx \
 		xautolock:x11/xautolock \
 		py3status:deskutils/py-py3status \
 		networkmgr:net-mgmt/networkmgr \
@@ -49,7 +48,8 @@ RUN_DEPENDS=	indexinfo:print/indexinfo \
 		gcalcli:deskutils/gcalcli \
 		neofetch:sysutils/neofetch \
 		scrot:graphics/scrot \
-		notify-send:devel/libnotify
+		notify-send:devel/libnotify \
+		compton:x11-wm/compton
 
 USES=		metaport fonts
 NO_ARCH=	yes
