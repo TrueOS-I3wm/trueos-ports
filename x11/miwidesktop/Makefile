@@ -49,7 +49,8 @@ RUN_DEPENDS=	indexinfo:print/indexinfo \
 		neofetch:sysutils/neofetch \
 		scrot:graphics/scrot \
 		notify-send:devel/libnotify \
-		compton:x11-wm/compton
+		compton:x11-wm/compton \
+		ranger:sysutils/py-ranger
 
 USES=		metaport fonts
 NO_ARCH=	yes
