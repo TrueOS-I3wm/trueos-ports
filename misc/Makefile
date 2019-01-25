@@ -83,6 +83,7 @@
     SUBDIR += e2fsprogs-libuuid
     SUBDIR += elixir-mime
     SUBDIR += elixir-uuid
+    SUBDIR += elki
     SUBDIR += elscreen
     SUBDIR += erlang-mimerl
     SUBDIR += erlang-mimetypes
@@ -207,6 +208,7 @@
     SUBDIR += kf5-purpose
     SUBDIR += kgeography
     SUBDIR += klettres
+    SUBDIR += kookbook
     SUBDIR += ktouch
     SUBDIR += kwordquiz
     SUBDIR += lastools
