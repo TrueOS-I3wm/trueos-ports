@@ -38,8 +38,16 @@ MFLAGS+=	WITH_${var}=YES
 .endif
 .endfor
 
+.if defined(TRUEOS_MANIFEST)
+TMANIFEST=	${TRUEOS_MANIFEST}
+.else
+TMANIFEST=	${WRKSRC}/release/trueos-manifest.json
+.endif
+
 .if defined(_MAKE_JOBS_NUMBER)
 JOBFLAG=	-j ${_MAKE_JOBS_NUMBER}
+.else
+JOBFLAG=	-j ${_SMP_CPUS}
 .endif
 
 PLIST_FILES+=	usr/dist/world.txz
@@ -64,6 +72,7 @@ do-install:
 		${MFLAGS} \
 		DESTDIR=${STAGEDIR}/world \
 		distribution
+	cp ${TMANIFEST} ${STAGEDIR}/world/var/db/trueos-manifest.json
 	tar cvJf ${STAGEDIR}/usr/dist/world.txz -C ${STAGEDIR}/world .
 	chflags -R noschg ${STAGEDIR}/world
 	rm -rf ${STAGEDIR}/world
