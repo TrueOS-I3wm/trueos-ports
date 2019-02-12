@@ -44,15 +44,13 @@ MFLAGS+=	WITH_${var}=YES
 .endfor
 
 do-build:
-	cd ${WRKSRC} && make ${JOBFLAG} ${KERNEL_MAKE_FLAGS} \
-		MAKEOBJDIRPREFIX=${WRKDIR}/obj \
+	cd ${WRKSRC} && env -i make ${JOBFLAG} ${KERNEL_MAKE_FLAGS} \
 		buildkernel
 
 do-install:
 	${MKDIR} -p ${STAGEDIR}/kernel
 	${MKDIR} -p ${STAGEDIR}/usr/dist
-	cd ${WRKSRC} && make ${JOBFLAG} ${KERNEL_MAKE_FLAGS} \
-		MAKEOBJDIRPREFIX=${WRKDIR}/obj \
+	cd ${WRKSRC} && env -i make ${JOBFLAG} ${KERNEL_MAKE_FLAGS} \
 	       	DESTDIR=${STAGEDIR}/kernel \
 		installkernel
 	tar cvJf ${STAGEDIR}/usr/dist/kernel.txz -C ${STAGEDIR}/kernel .
