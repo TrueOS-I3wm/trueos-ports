@@ -12,6 +12,7 @@
     SUBDIR += corebird
     SUBDIR += cutegram
     SUBDIR += diligent
+    SUBDIR += dino
     SUBDIR += echat
     SUBDIR += ejabberd
     SUBDIR += ekiga
@@ -63,7 +64,6 @@
     SUBDIR += libsignon-glib
     SUBDIR += libstrophe
     SUBDIR += libtelepathy
-    SUBDIR += libyahoo2
     SUBDIR += licq
     SUBDIR += licq-icq
     SUBDIR += licq-jabber
