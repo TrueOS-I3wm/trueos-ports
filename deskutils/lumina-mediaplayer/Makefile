@@ -5,7 +5,7 @@ PORTNAME=	lumina-mediaplayer
 PORTVERSION=	1.4.2
 PORTREVISION=	201803131031
 PORTREVISION=	2
-CATEGORIES=	deskutils
+ATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com
 COMMENT=	Streaming media player from the Lumina Desktop
@@ -13,7 +13,7 @@ COMMENT=	Streaming media player from the Lumina Desktop
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
-RUN_DEPENDS=	gstreamer1-qt5>=0:multimedia/gstreamer1-qt@qt5 \
+RUN_DEPENDS=	gstreamer1-qt5>=0:multimedia/gstreamer1-qt \
 		gstreamer1-plugins-gl>=0:graphics/gstreamer1-plugins-gl
 
 OPTIONS_DEFINE=	I18N
