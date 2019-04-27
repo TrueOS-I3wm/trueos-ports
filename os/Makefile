@@ -4,9 +4,12 @@
     COMMENT = Operating System Ports
 
     SUBDIR += buildkernel
+    SUBDIR += buildkernel-debug
     SUBDIR += buildworld
     SUBDIR += kernel
+    SUBDIR += kernel-symbols
     SUBDIR += kernel-debug
+    SUBDIR += kernel-debug-symbols
     SUBDIR += manifest
     SUBDIR += src
     SUBDIR += userland

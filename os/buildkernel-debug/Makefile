@@ -2,13 +2,13 @@
 
 .include "../Makefile.common"
 
-PORTNAME=	buildkernel
+PORTNAME=	buildkernel-debug
 PORTVERSION=	${OS_PORTVERSION}
 PORTREVISION=	1
 CATEGORIES=	os
 
 MAINTAINER=	kris@ixsystems.com
-COMMENT=	Buildkernel portition of os packages
+COMMENT=	Buildkernel portition of os packages with debug enabled
 
 SRCDIR?=/usr/src
 .if !exists(${SRCDIR}/Makefile)
@@ -20,7 +20,7 @@ EXTRACT_ONLY=
 DISTFILES=
 WITHOUT_FBSD10_FIX=	yes
 WRKSRC=${SRCDIR}
-PLIST_FILES+=	/usr/dist/kernel.txz
+PLIST_FILES+=	/usr/dist/kernel-debug.txz
 LOCAL_SDIR?=	/usr/local_source
 NEED_ROOT=	yes
 .if exists(${LOCAL_SDIR}/${PORTNAME})
@@ -32,9 +32,9 @@ PKG_ABISTRING=	${BASEPKG_ABISTRING}
 PKG_ABISTRING=	FreeBSD:13:${ARCH}
 .endif
 
-# Set default non-debug config for HEAD / Other
-.if exists(${SRCDIR}/sys/${ARCH}/conf/GENERIC-NODEBUG)
-KERNCONF?=	GENERIC-NODEBUG
+# Set default debug config
+.if defined(${DEBUGKERNCONF})
+KERNCONF=	${DEBUGKERNCONF}
 .else
 KERNCONF?=	GENERIC
 .endif
@@ -71,15 +71,16 @@ do-build:
 		buildkernel
 
 do-install:
-	${MKDIR} -p ${STAGEDIR}/kernel
+	${MKDIR} -p ${STAGEDIR}/kernel-debug
 	${MKDIR} -p ${STAGEDIR}/usr/dist
 	cd ${WRKSRC} && env -i MAKEOBJDIRPREFIX=${WRKDIR} make ${JOBFLAG} ${MCONF} ${KERNEL_MAKE_FLAGS} \
 		KERNCONF=${KERNCONF} \
 		${MFLAGS} \
-	       	DESTDIR=${STAGEDIR}/kernel \
+	       	DESTDIR=${STAGEDIR}/kernel-debug \
 		installkernel
-	tar cvJf ${STAGEDIR}/usr/dist/kernel.txz -C ${STAGEDIR}/kernel .
-	chflags -R noschg ${STAGEDIR}/kernel
-	${RM} -rf ${STAGEDIR}/kernel
+	mv ${STAGEDIR}/kernel-debug/boot/kernel ${STAGEDIR}/kernel-debug/boot/kernel-debug
+	tar cvJf ${STAGEDIR}/usr/dist/kernel-debug.txz -C ${STAGEDIR}/kernel-debug .
+	chflags -R noschg ${STAGEDIR}/kernel-debug
+	${RM} -rf ${STAGEDIR}/kernel-debug
 
 .include <bsd.port.post.mk>
