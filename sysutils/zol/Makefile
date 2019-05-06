@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	zol
-PORTVERSION=	2019041800
+PORTVERSION=	2019050600
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -14,10 +14,11 @@ BROKEN_aarch64=	invokes x86 assembler
 
 RUN_DEPENDS=	zol-kmod>=0:sysutils/zol-kmod
 
-USES=		autoreconf:build libtool gmake gettext-runtime:run
+USES=		autoreconf:build libtool gmake gettext-runtime:run python:3.3+ \
+		shebangfix
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--prefix=${PREFIX} --with-config="user"
+CONFIGURE_ARGS=	--prefix=${PREFIX} --with-config="user" --with-python=${PYTHON_VER}
 
 OPTIONS_DEFINE= DEBUG
 OPTIONS_SUB=    yes
@@ -25,7 +26,7 @@ OPTIONS_SUB=    yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	zfsonfreebsd
 GH_PROJECT=	ZoF
-GH_TAGNAME=	e585f57
+GH_TAGNAME=	b48e374
 
 .include <bsd.port.pre.mk>
 
