@@ -1,13 +1,12 @@
 # $FreeBSD$
 
-.include "../Makefile.common"
-
 PORTNAME=	userland
-PORTVERSION=	${OS_PORTVERSION}
+PORTVERSION=	${BASEPKG_PORTVERSION}
+PORTEPOCH=	1
 CATEGORIES=	os
 PKGNAMEPREFIX=	${OS_PKGNAMEPREFIX}
 
-MAINTAINER=	kris@ixsystems.com
+MAINTAINER=	kmoore@FreeBSD.org
 COMMENT=	Metaport for the OS userland
 
 USES=	metaport os:flavors
@@ -46,4 +45,5 @@ RUN_DEPENDS+=	/usr/tests/README:os/userland-tests@${OS_FLAVOR}
 RUN_DEPENDS+=	${LOCALBASE}/sbin/zpool:sysutils/zol
 .endif
 
+.include "../Makefile.common"
 .include <bsd.port.post.mk>

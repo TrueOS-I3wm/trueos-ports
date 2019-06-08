@@ -69,6 +69,7 @@
     SUBDIR += auralquiz
     SUBDIR += avanor
     SUBDIR += avoision
+    SUBDIR += avp
     SUBDIR += awale
     SUBDIR += awele
     SUBDIR += balazar
@@ -193,11 +194,13 @@
     SUBDIR += dangerdeep-data
     SUBDIR += darkplaces
     SUBDIR += defendguin
+    SUBDIR += devilutionX
     SUBDIR += dhewm3
     SUBDIR += diameter
     SUBDIR += diaspora
     SUBDIR += digger-vgl
     SUBDIR += divide-and-succeed
+    SUBDIR += dMagnetic
     SUBDIR += dmjava
     SUBDIR += dodgindiamond2
     SUBDIR += domination
@@ -308,6 +311,7 @@
     SUBDIR += frogatto
     SUBDIR += frotz
     SUBDIR += frozen-bubble
+    SUBDIR += fs2open
     SUBDIR += fteqw
     SUBDIR += funnyboat
     SUBDIR += galaxis
@@ -509,6 +513,7 @@
     SUBDIR += libmaitretarot
     SUBDIR += libmt_client
     SUBDIR += libshhcards
+    SUBDIR += libtmcg
     SUBDIR += lightsoff
     SUBDIR += lightyears
     SUBDIR += lincity
