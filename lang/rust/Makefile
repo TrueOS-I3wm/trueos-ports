@@ -34,6 +34,7 @@ LIB_DEPENDS=		libcurl.so:ftp/curl \
 
 ONLY_FOR_ARCHS?=	aarch64 amd64 armv6 armv7 i386 powerpc64
 ONLY_FOR_ARCHS_REASON=	requires prebuilt bootstrap compiler
+MAKE_JOBS_UNSAFE=	yes
 
 CONFLICTS_INSTALL?=	rust-nightly
 
