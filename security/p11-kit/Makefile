@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 BUILD_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
-LIB_DEPENDS=	${LOCALBASE}/lib/libtasn1.so:security/libtasn1 \
-				${LOCALBASE}/lib/libffi.so:devel/libffi
+LIB_DEPENDS=	libtasn1.so:security/libtasn1 \
+				libffi.so:devel/libffi
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls --enable-debug=no \
