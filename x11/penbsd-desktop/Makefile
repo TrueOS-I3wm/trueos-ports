@@ -8,8 +8,7 @@ CATEGORIES=	x11
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	PenBSD Desktop Port
 
-RUN_DEPENDS=	
-		font-awesome>0:x11-fonts/font-awesome \
+RUN_DEPENDS=	font-awesome>0:x11-fonts/font-awesome \
 		i3:x11-wm/i3 \
 		st:x11/i3-sterm \
 		dunst:sysutils/dunst \
