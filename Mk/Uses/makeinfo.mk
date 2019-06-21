@@ -18,7 +18,7 @@ IGNORE=	USES=makeinfo - expects no arguments
 .if exists(/usr/bin/makeinfo)
 MAKEINFO?=	/usr/bin/makeinfo
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/makeinfo:print/texinfo
+BUILD_DEPENDS+=	makeinfo:print/texinfo
 MAKEINFO?=	${LOCALBASE}/bin/makeinfo
 .endif
 

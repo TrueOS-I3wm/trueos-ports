@@ -14,7 +14,7 @@ _INCLUDE_USES_GMAKE_MK=	yes
 IGNORE=	Incorrect 'USES+= gmake:${gmake_ARGS}' gmake takes no arguments
 .endif
 
-BUILD_DEPENDS+=		${LOCALBASE}/bin/gmake:devel/gmake
+BUILD_DEPENDS+=		gmake:devel/gmake
 CONFIGURE_ENV+=		MAKE=${LOCALBASE}/bin/gmake
 MAKE_CMD=		${LOCALBASE}/bin/gmake
 

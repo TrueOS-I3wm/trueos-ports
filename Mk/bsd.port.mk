@@ -2662,7 +2662,7 @@ MANNPREFIX?=	${MANPREFIX}
 INFO_PATH?=	share/info
 
 .if defined(INFO)
-RUN_DEPENDS+=	${LOCALBASE}/bin/indexinfo:print/indexinfo
+RUN_DEPENDS+=	indexinfo:print/indexinfo
 
 . for D in ${INFO:H}
 RD:=	${D}
