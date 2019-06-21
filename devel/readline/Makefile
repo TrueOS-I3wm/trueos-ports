@@ -12,6 +12,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library for editing command lines as they are typed
 
+BUILD_DEPENDS+=	indexinfo:print/indexinfo
+
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
