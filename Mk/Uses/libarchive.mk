@@ -12,5 +12,5 @@
 _INCLUDE_USES_LIBARCHIVE_MK=	yes
 _USES_POST+=	localbase
 
-LIB_DEPENDS+=	libarchive.so.13:archivers/libarchive
+LIB_DEPENDS+=	${LOCALBASE}/lib/libarchive.so.13:archivers/libarchive
 .endif

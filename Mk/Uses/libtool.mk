@@ -18,7 +18,7 @@ _INCLUDE_USES_LIBTOOL_MK=	yes
 _USES_POST+=	libtool
 
 .if ${libtool_ARGS:Mbuild}
-BUILD_DEPENDS+=	libtool:devel/libtool
+BUILD_DEPENDS+=	${LOCALBASE}/bin/libtool:devel/libtool
 .endif
 .endif
 
