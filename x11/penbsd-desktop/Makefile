@@ -17,7 +17,8 @@ RUN_DEPENDS=	font-awesome>0:x11-fonts/font-awesome \
 		py3status:deskutils/py-py3status \
 		notify-send:devel/libnotify \
 		compton:x11-wm/compton \
-		ranger:sysutils/py-ranger
+		ranger:sysutils/py-ranger \
+		i3status:x11/i3status
 
 USES=		metaport fonts
 NO_ARCH=	yes
