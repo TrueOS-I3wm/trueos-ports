@@ -428,13 +428,14 @@
     SUBDIR += gkrelltop
     SUBDIR += gksu
     SUBDIR += glogg
-    SUBDIR += gnome_subr
     SUBDIR += gnome-control-center
     SUBDIR += gnome-mount
     SUBDIR += gnome-power-manager
     SUBDIR += gnome-schedule
     SUBDIR += gnome-settings-daemon
     SUBDIR += gnome-system-monitor
+    SUBDIR += gnome_subr
+    SUBDIR += go-wtf
     SUBDIR += goaccess
     SUBDIR += goawk
     SUBDIR += gomplate
